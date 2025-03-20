@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios y Galería</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Bienvenido a la de servicios de Jeffry Hurtado</h1>
+        <p>Explora mis trabajos realizados y servicios.</p>
+    </header>
+
+    <!-- Menú desplegable -->
+    <nav class="dropdown-menu">
+        <h2>Proyectos Realizados</h2>
+        <div class="dropdown">
+            <button class="dropdown-toggle">
+                Seleccionar Trabajo
+            </button>
+            <ul class="dropdown-content">
+                <li><a href="https://proyectosjeff.github.io/calculadora/">Calculadora Básica</a></li>
+                <li><a href="https://www.ejesac.com.pe/">Empresa EJE Proyectos</a></li>
+                <li><a href="https://www.ncgsac.com/">Empresa NCG SAC </a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Servicios -->
+    <section class="services">
+        <h2>Mis Servicios</h2>
+        <div class="service-row">
+            <div class="service-card">
+                <h3>Consultoría Personalizada</h3>
+                <p>Te ayudo a resolver retos empresariales con soluciones personalizadas.</p>
+            </div>
+            <div class="service-card">
+                <h3>Desarrollo de Proyectos</h3>
+                <p>Planificación y ejecución profesional para tus ideas más innovadoras.</p>
+            </div>
+            <div class="service-card">
+                <h3>Soporte Técnico</h3>
+                <p>Garantiza el correcto funcionamiento de tus sistemas en todo momento.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carrusel -->
+    <section class="carousel">
+        <h2>Galería</h2>
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <img src="img1.jpg" alt="Foto 1">
+                <img src="img2.jpg" alt="Foto 2">
+                <img src="img3.jpg" alt="Foto 3">
+            </div>
+        </div>
+        <div class="carousel-controls">
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+        <div class="carousel-indicators">
+            <span class="dot" onclick="setSlide(0)"></span>
+            <span class="dot" onclick="setSlide(1)"></span>
+            <span class="dot" onclick="setSlide(2)"></span>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2025 - [Jeffry Hurtado]. Todos los derechos reservados.</p>
+        <p>Telefono: 991924479 --- Correo: jeffhurtado@ejesac.com.pe</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
